@@ -1,10 +1,10 @@
-# Kinect2UnityPlugin \n
-For call from Unity3d\n
+# Kinect2UnityPlugin
+For call from Unity3d
 
-CharacterSkeleton skeleton;
-    [DllImport("NTKINECTDLL")] private static extern System.IntPtr getKinect();
-    [DllImport("NTKINECTDLL")] private static extern System.IntPtr stopKinect(System.IntPtr kinect);
-    [DllImport("NTKINECTDLL")] private static extern int setSkeleton(System.IntPtr kinect, System.IntPtr data, System.IntPtr state, System.IntPtr id, bool video);
+    CharacterSkeleton skeleton; <br>
+    [DllImport("NTKINECTDLL")] private static extern System.IntPtr getKinect();<br>
+    [DllImport("NTKINECTDLL")] private static extern System.IntPtr stopKinect(System.IntPtr kinect);<br>
+    [DllImport("NTKINECTDLL")] private static extern int setSkeleton(System.IntPtr kinect, System.IntPtr data, System.IntPtr state, System.IntPtr id, bool video);<br>
 
     void Start(){ skeleton = new CharacterSkeleton(humanoid);}
     

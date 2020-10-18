@@ -1,5 +1,5 @@
-# Kinect2UnityPlugin
-For call from Unity3d
+# Kinect2UnityPlugin \n
+For call from Unity3d\n
 
 CharacterSkeleton skeleton;
     [DllImport("NTKINECTDLL")] private static extern System.IntPtr getKinect();
